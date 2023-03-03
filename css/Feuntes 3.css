@@ -1,0 +1,19 @@
+h1{
+    font-size: 6em;
+    color: rgb(39, 10, 145);
+}
+p {
+    font-size: 4em;
+    color: blueviolet;
+    font-family: 'waltograph42';
+}
+/* bebas-neue-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'waltograph42';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/waltograph42.otf'); /* IE9 Compat Modes */
+    src: url('../fonts/waltographUI.ttf') format('embedded-opentype'), /* IE6-IE8 */
+       
+  }
