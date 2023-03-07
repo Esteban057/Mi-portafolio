@@ -1,11 +1,20 @@
-h1{
-    font-size: 6em;
-    color: rgb(39, 10, 145);
+* {
+    margin: 0;
+    padding: 0;
 }
-p {
-    font-size: 4em;
-    color: blueviolet;
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(23, 23, 23);
+    color: white;
+    height: 100vh;
+    width: 100%;
+}
+label {
     font-family: 'waltograph42';
+    font-size: 10em;
+    text-align: center;
 }
 /* bebas-neue-regular - latin */
 @font-face {

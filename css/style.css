@@ -1,3 +1,15 @@
-h2{
+h1{
+    font-size: 8em;
+    color: blueviolet;
+    text-align: center;
+}
+h2 {
     font-size: 5em;
+    color: blueviolet;
+    text-align: center;
+}
+h3{
+    font-size: 3em;
+    color: blueviolet;
+    text-align: center;
 }
