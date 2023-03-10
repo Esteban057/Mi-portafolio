@@ -6,8 +6,8 @@ div {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(38, 37, 38);
-    color: rgb(152, 73, 225);
+    background-color:white ;
+    color: rgb(38, 37, 38);
     height: 100vh;
     width: 100%;
 }
