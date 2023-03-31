@@ -52,7 +52,7 @@ img {
     font-size: 1.9em;
     font-weight: 900;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(64,64,64,.9);
+    color: rgba(80, 12, 12, 0.9);
 }
 
 .tex-description {
