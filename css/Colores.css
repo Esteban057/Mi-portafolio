@@ -1,0 +1,48 @@
+h1{
+    font-size: 6em;
+    text-align: center;
+}
+.box-direction {
+    display: flex;
+    flex-direction: row;
+}
+.box-style {
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.8em;
+    text-align: center;
+    font-family:Tahoma, sans-serif;
+    font-weight: 900;
+}
+.box-magenta {
+    background-color:magenta;
+}
+.box-darkmagenta {
+    background-color: darkmagenta;
+}
+.box-blueviolet {
+    background-color: blueviolet;
+}
+.box-149-191-107 {
+    background-color: rgb(149, 191, 107);
+}
+.box-29-79-29 {
+    background-color: rgb(29, 79, 29);
+}
+.box-30-29-30 {
+    background-color:rgb(30,29,30);
+}
+.box-14FAC4 {
+    background-color: #14FAC4;
+}
+.box-07F {
+    background-color: #07F;
+}
+.box-057F10 {
+    background-color: #057f10;
+}
