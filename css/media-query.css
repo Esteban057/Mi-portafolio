@@ -6,7 +6,15 @@
 .main-nav {
     width: 100%;
     height: 80px;
-    background-color: rgb(54, 52, 52);
+    display: inline-block;
+    
+}
+
+.main-nav-2 {
+    width: 100%;
+    height: 80px;
+    display: inline-block;
+    background-color: rgb(0, 0, 0);
 }
 
 .main-menu {
@@ -15,7 +23,6 @@
     font-family: 'Shippori Antique';
     text-align: center;
     list-style: none;
-
 }
 
 .item-style {
@@ -25,10 +32,7 @@
 
 .item-style:hover {
     background-color: rgb(177, 175, 175);
-    ;
     cursor: pointer;
-
-
 }
 
 a {
@@ -43,14 +47,24 @@ a {
 }
 
 @media only screen and (max-width:925px) {
+    .main-menu{
+        display: none;
+    }
     .main-menu-block {
+        font-size: 1.2em;
+        font-weight: 700;
+        font-family: 'Shippori Antique';
         height: 100vh;
         background-color: rgb(54, 52, 52);
-        text-align: left;
+        text-align: center;
+        list-style: none;
+        position: fixed;
+        width: 100%;
+        left: 0;
     }
     .item-style{
         display: block;
-        border-bottom: 1px solid rgb(210, 207, 207,.2);
+        border-bottom: 2px solid rgb(210, 207, 207,.2);
     }
 
     .menu-bar {
@@ -59,10 +73,13 @@ a {
         padding-top: 15px;
         margin-left: 20px;
         font-size: 2em;
+        margin-top: 20px;
+        text-align: center;
     }
 
     .menu-bar:hover {
         cursor: pointer;
+        background-color: rgb(210, 207, 207,.2);
     }
 }
 
