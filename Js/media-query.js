@@ -17,4 +17,4 @@ menuBar.addEventListener("click", function(){
     /* mainMenu.classList.remove("main-menu");
     mainMenu.classList.add("main-menu-block"); */
 })
-/* alert("LOL") */
+alert("LOL")
