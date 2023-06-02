@@ -1,0 +1,31 @@
+
+.box-style {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    font-family:Tahoma, sans-serif;
+}
+
+.style-box1 {
+    background-color: blueviolet;
+    position: static;
+    left: 300px;
+    right: 300px;
+    top: 300px;
+}
+.style-box2 {
+    background-color: brown;
+}
+.style-box3 {
+    background-color: darkgreen;
+}
+
+.style-box4 {
+    background-color: darkcyan;
+}
