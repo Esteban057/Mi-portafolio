@@ -1,95 +1,95 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Bebas Neue';
 }
 
-nav ul {
-    background-color: rgb(64,64,64);
-    font-size: 1.5rem;
-    position: absolute;
+nav{
     width: 100%;
+    /* height: 72px; */
+    background-color: rgb(48, 14, 81);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul {
+    width: 100%;
+    text-align: right;
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+    position: relative;
+    width: 250px;
     text-align: center;
 }
- nav li {
-    list-style: none;
-    position: relative;
-    text-align: center;
-    cursor: pointer;
-    transition: 0.3s;
- }
 
- nav li:hover {
-    background-color: rgb(191, 183, 183);
- }
-
- nav a {
-    text-decoration: none;
+a {
     color: whitesmoke;
- }
+    font-size: 1.3rem;
+    text-decoration: none;
+    display: block;
+    line-height: 3em;
+}
 
-  /* Menu Primer nivel */
+a:hover {
+    background-color: rgb(185, 144, 223);
+    cursor: pointer;
+    transition: 1.3s;
+    overflow: visible;
+}
 
-  nav > ul > li {
-    display: inline-block;
-    width: 250px;
-    line-height: 70px;
- }
+.icon-style {
+    margin-right: 8px;
+    font-size: 0.75em;
+}
 
-@media only screen and (max-width:1000px) {
-    .main-menu{
-        height: 100vh;
-        background-color: rgb(0, 0, 0);
-        list-style: none;
-        text-align: center;
-        position: fixed;
-        width: 100%;
-        left:  -95%;
-        transition: left 400ms;
-    }
-    .main-menu-block {
-        font-size: 1.2em;
-        font-weight: 600;
-        font-family: 'Bebas Neue';
-        height: 100vh;
-        background-color: rgb(0, 0, 0);
-        list-style: none;
-        text-align: center;
-        position: fixed;
-        width: 70%;
-        left: 0;
-        transition: left 400ms;
-    }
-    .item-style{
+.icon-sd {
+    font-size: 0.9em;
+    position: relative;
+    left: 35px;
+}
+
+.chaild-menu {
+    position: absolute;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 1s;
+}
+
+.main-menu > li:hover .chaild-menu {
+    position: absolute;
+    /* display: block; */
+    color: brown;
+    /* overflow: visible; */
+    max-height: 500px;
+    background-color: rgb(48, 14, 81);
+}
+
+.box-bar{
+    display: none;
+}
+
+@media only screen and (max-width: 750px){
+    .box-bar {
         display: block;
-        border-bottom: 1px solid rgb(0, 0, 0);
+        width: 500px;
+        height: 72px;
+        background-color: red;
+        position: fixed;
     }
 
     .menu-bar {
-        display: inline-block;
-        color: white;
-        text-align: left;
-        padding-top: 10px;
-        margin-left: 25px;
-        font-size: 2em;
+        color: whitesmoke;
+        font-size: 1.5em;
+        position: relative;
+        right: 15px;
+        bottom: 15px;
     }
-
-    .menu-bar:hover {
-        cursor: pointer;
-        background-color: rgb(210, 207, 207,.2);
+    nav {
+        margin-top: 73px;
+        height: calc(100% - 48px);
+        width: 80%;
+        position: fixed;
     }
+    
 }
-
-/* bebas-neue-regular - latin */
-@font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Bebas Neue';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/bebas-neue-v9-latin-regular.eot'); /* IE9 Compat Modes */
-    src: url('../fonts/bebas-neue-v9-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../fonts/bebas-neue-v9-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/bebas-neue-v9-latin-regular.woff') format('woff'), /* Modern Browsers */
-         url('../fonts/bebas-neue-v9-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/bebas-neue-v9-latin-regular.svg#BebasNeue') format('svg'); /* Legacy iOS */
-  }
