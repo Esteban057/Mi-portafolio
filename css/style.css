@@ -1,59 +1,102 @@
-* {
+*{
     margin: 0;
     padding: 0;
-}
-nav {
-    width: 100%;
-    height: 100px;
-    background-color: rgb(54, 52, 52);
-}
-.menu {
-    list-style: none;
-    text-align: center;
-    line-height: 1.5em;
-}
-.style-icon {
-    color: whitesmoke;
-    font-size: 1em;
-    font-family: sans-serif;
-    display: inline-block;
-    margin-left: 35px;
-    margin-top: 20px;
-    line-height: 35px;
-}
-.style-icon:hover{
-    border-bottom: 2px whitesmoke;
-    cursor: pointer;
+    font-family: 'Bebas Neue';
 }
 a {
-    color: whitesmoke;
+    display: block;
+}
+
+nav ul {
+    background-color: rgb(64,64,64);
+    font-size: 1.5rem;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+ nav li {
+    list-style: none;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+ }
+
+ nav li:hover {
+    background-color: rgb(191, 183, 183);
+ }
+
+ nav a {
     text-decoration: none;
-}
-h1{
+    color: whitesmoke;
+ }
+
+ /* Menu Primer nivel */
+
+ nav > ul > li {
+    display: inline-block;
+    width: 250px;
+    line-height: 70px;
+ }
+
+ /* Menu Segundo Nivel */
+
+ nav li li {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s;
+ }
+
+ nav li:hover > ul > li {
+    max-height: 500px;
+    overflow: visible;
+    transition: 0.5s;
+    border-top: 0.5px solid white;
+    border-right: 0.5px solid white;
+    transition: max-height 1.5s;
+ }
+
+ /* Menu de tercer Nivel */
+
+ nav ul ul ul {
+    left: 100%;
+    top: 0;
+ }
+
+
+ .img-fondo {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -90;
+ }
+
+ .tipografia {
+    font-family: "Halo";
+    color: white;
     font-size: 8em;
-    font-family: 'Bebas Neue';
-    color: rgb(253, 253, 253);
     text-align: center;
-}
-h2 {
-    font-size: 5em;
-    font-family: 'Bebas Neue';
-    color: rgb(255, 255, 255);
-    text-align: center;
-}
-h3{
-    font-size: 3em;
-    font-family: 'Bebas Neue';
-    color: rgb(255, 255, 255);
-    text-align: center;
-}
-body {
-    background-color: #000000;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 800'%3E%3Cg %3E%3Ccircle fill='%23000000' cx='400' cy='400' r='600'/%3E%3Ccircle fill='%23230046' cx='400' cy='400' r='500'/%3E%3Ccircle fill='%232f0052' cx='400' cy='400' r='400'/%3E%3Ccircle fill='%233b075e' cx='400' cy='400' r='300'/%3E%3Ccircle fill='%2348156a' cx='400' cy='400' r='200'/%3E%3Ccircle fill='%23552277' cx='400' cy='400' r='100'/%3E%3C/g%3E%3C/svg%3E");
-    background-attachment: fixed;
-    background-size: cover;
-}
+    justify-content: center;
+ }
+
+
 /* bebas-neue-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Halo';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/Halo.ttf'); /* IE9 Compat Modes */
+    src: url('../fonts/Halo.ttf') format('embedded-opentype'), /* IE6-IE8 */
+       
+  }
+
+
+
+
+/* /* bebas-neue-regular - latin */
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Bebas Neue';
@@ -65,4 +108,4 @@ body {
          url('../fonts/bebas-neue-v9-latin-regular.woff') format('woff'), /* Modern Browsers */
          url('../fonts/bebas-neue-v9-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
          url('../fonts/bebas-neue-v9-latin-regular.svg#BebasNeue') format('svg'); /* Legacy iOS */
-  }
+  } 
