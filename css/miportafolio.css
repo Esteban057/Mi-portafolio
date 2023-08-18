@@ -59,7 +59,7 @@ body{
     margin: 0 10px;
 }
 .inicio .redes a:hover{
-    color: #ffffff;
+    color: #f30808;
 }
 .inicio .fila{
     display: flex;
@@ -114,6 +114,10 @@ body{
     filter:drop-shadow(0em 30px 20px #9bd2f4);
 }
 /* SECCION S E R V I C I O S */
+.conocimientos {
+    margin-top: 200px;
+    text-align: center;
+}
 .servicios{
     max-width: 1100px;
     margin: auto;
@@ -187,7 +191,9 @@ body{
 }
 /* SECCION T R A B A J O S */
 h2{
-    color: white;
+    color: rgb(255, 255, 255);
+    margin-top: 200px;
+    text-align: center;
 }
 .trabajos{
     background:linear-gradient(to right, #444444, #0e0e0e);

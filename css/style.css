@@ -50,16 +50,16 @@ body{
     border: 2px solid transparent;
 }
 #inicio header nav a:hover{
-    border-bottom: 2px solid #ffffff;
+    border-bottom: 2px solid #ec1111;
 }
 .inicio .redes a{
     text-decoration: none;
-    color: #fff;
+    color: #ff0101;
     display: inline-block;
     margin: 0 10px;
 }
 .inicio .redes a:hover{
-    color: #ffffff;
+    color: #00c8ff;
 }
 .inicio .fila{
     display: flex;
@@ -114,6 +114,12 @@ body{
     filter:drop-shadow(0em 30px 20px #9bd2f4);
 }
 /* SECCION S E R V I C I O S */
+/* .conocimientos {
+    font-size: 35px;
+    margin-top: 200px;
+    text-align: center;
+    color: #000;
+} */
 .servicios{
     max-width: 1100px;
     margin: auto;
