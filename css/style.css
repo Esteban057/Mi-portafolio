@@ -1,97 +1,158 @@
 *{
-    margin: 0;
-    padding: 0;
-    font-family: 'Bebas Neue';
+   margin: 0;
+   padding: 0;
+   font-family: sans-serif;
 }
-a {
-    display: block;
+
+h1 {
+   font-family: 'Bebas Neue';
+   font-size: 5em;
+   color: white;
+}
+
+h2 {
+   font-family: 'Bebas Neue';
+   font-size: 4em;
+   color: white;
+   display: flex;
+   text-align: center;
 }
 
 nav ul {
-    background-color: rgb(64,64,64);
-    font-size: 1.5rem;
-    position: absolute;
-    width: 100%;
-    text-align: center;
+   background-color: rgb(64,64,64);
+   font-size: 0,5rem;
+   position: absolute;
+   width: 100%;
+   text-align: center;
 }
- nav li {
-    list-style: none;
-    position: relative;
-    text-align: center;
-    cursor: pointer;
-    transition: 0.3s;
- }
 
- nav li:hover {
-    background-color: rgb(191, 183, 183);
- }
+nav li {
+   list-style: none;
+   position: relative;
+   text-align: center;
+   cursor: pointer;
+   transition: 0.3s;
+}
 
- nav a {
-    text-decoration: none;
-    color: whitesmoke;
- }
+nav li:hover {
+   background-color: rgb(191, 183, 183);
+}
+
+nav a {
+   text-decoration: none;
+   color: whitesmoke;
+   display: block;
+}
 
  /* Menu Primer nivel */
 
  nav > ul > li {
-    display: inline-block;
-    width: 250px;
-    line-height: 70px;
- }
+   display: inline-block;
+   width: 150px;
+   line-height: 100px;
+}
 
- /* Menu Segundo Nivel */
+/* Menu Segundo Nivel */
 
- nav li li {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s;
- }
+nav li li {
+   max-height: 0;
+   overflow: hidden;
+   transition: max-height 0.2s;
+}
 
- nav li:hover > ul > li {
-    max-height: 500px;
-    overflow: visible;
-    transition: 0.5s;
-    border-top: 0.5px solid white;
-    border-right: 0.5px solid white;
-    transition: max-height 1.5s;
- }
+nav li:hover > ul > li {
+   max-height: 400px;
+   overflow: visible;
+   transition: 0.5s;
+   border-top: 0.5px solid white;
+   border-right: 0.5px solid white;
+   transition: max-height 1.5s;
+}
 
- /* Menu de tercer Nivel */
+/* Menu de tercer Nivel */
 
- nav ul ul ul {
-    left: 100%;
-    top: 0;
- }
-
-
- .img-fondo {
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -90;
- }
-
- .tipografia {
-    font-family: "Halo";
-    color: white;
-    font-size: 8em;
-    text-align: center;
-    justify-content: center;
- }
+nav ul ul ul {
+   left: 100%;
+   top: 0;
+}
+.img-fondo {
+   height: 100%;
+   width: 100%;
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: -90;
+}
 
 
-/* bebas-neue-regular - latin */
-@font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Halo';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/Halo.ttf'); /* IE9 Compat Modes */
-    src: url('../fonts/Halo.ttf') format('embedded-opentype'), /* IE6-IE8 */
-       
-  }
+
+header {
+   background-color: rgb(30, 4, 55);
+   width: 100%;
+   height: 100px;
+   display: grid;
+   grid-template: "logo menu" 100px /
+                         150px 1fr;
+}
+
+.logo{
+   grid-area: logo;
+   background-color: rgb(59, 57, 57);
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.menu {
+   grid-area: menu;
+   background-color: rgb(118, 113, 113);
+   width: 100%;
+   height: 90%;
+}
+.img-principal {
+   grid-area: img-principal;
+   width: 100%;
+   height: 600px;
+   display: flex;
+   align-items: center;
+}
+
+.main-content {
+   width: 100%;
+   display: grid;
+   column-gap: 80px;
+   row-gap: 40px;
+   grid-template: "img-principal img-principal img-principal img-principal img-principal"     600px 
+                  "empty-left    article-1     article-2     article-3         empty-right"   500px/
+                   1fr           350px         350px         350px             1fr;
+}
+
+.article {
+   width: 100%;
+   height: 350px;
+   background-color: rgb(59, 46, 71);
+}
+
+.article-1 {
+   grid-area: article-1;
+}
+
+.article-2 {
+   grid-area: article-2;
+}
+
+.article-3 {
+   grid-area: article-3;
+}
+.style-box {
+   color: whitesmoke;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 2em;
+   font-weight: 900;
+}
 
 
 
