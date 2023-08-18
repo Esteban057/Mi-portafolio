@@ -1,55 +1,279 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Esteban</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="Icons/all.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js" integrity="sha512-DHNepbIus9t4e6YoMBSJLwl+nnm0tIwMBonsQQ+W9NKN6gVVVbomJs9Ii3mQ+HzGZiU5FyJLdnAz9a63ZgZvTQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/miportafolio.css">
+    <title>Porfolio</title>
 </head>
-
 <body>
-    <img class="img-fondo" src="Img/Iratux.jpg" alt="">
-    <div class="box-bar">
-        <span class="menu-bar icon-menu"></span>
-    </div>
-    <nav>
-        <ul>
-            <li><a href="index.html"><i class="fa-solid fa-house"></i><br>Inicio</a></li>
-            <li><a href="Fuentes.html"><i class="fa-solid fa-pen-to-square"></i><br>Fuentes</a>
-                <ul>
-                    <li><a href="Fuente 1.html"><i class="fa-solid fa-pen-to-square"></i><br>Fuente 1</a></li>
-                    <li><a href="Fuente 2.html"><i class="fa-solid fa-pen-to-square"></i><br>Fuente 2</a></li>
-                    <li><a href="Fuente 3.html"><i class="fa-solid fa-pen-to-square"></i><br>Fuente 3</a></li>
-                </ul>
-            </li>
-            </li>
-            <li><a href="Colores.html"><i class="fa-solid fa-droplet"></i><br>Colores</a></li>
-            <li><a href="Catalogo.html"><i class="fa-solid fa-store"></i><br>Catalogo</a></li>
-            <li><a href="media-query.html"><i class="fa-solid fa-table"></i><br>Media Query</a></li>
-            <li><a href="flexbox.html"><i class="fa-solid fa-bars"></i><br>Flex Box</a></li>
-            <li><a href="#"><i class="fa-solid fa-caret-down"></i><br>Mas Opciones</a>
-                <ul>
-                    <li><a href="calendario.html"><i class="fa-solid fa-calendar-days"></i><br>Calendario</a></li>
-                    <li><a href="maquetacion.html"><i class="fa-brands fa-buromobelexperte"></i><br>Maquetacion</a></li>
-                    <li><a href="Transicion.html"><i class="fa-solid fa-tent-arrow-left-right"></i><br>Trasicion</a></li>
-                    <li><a href="Margenes.html"><i class="fa-solid fa-receipt"></i><br>Margenes</a></li>
-                    <li><a href="Tabla.html"><i class="fa-solid fa-table-cells"></i><br>Tabla</a></li>
-                    <li><a href="Menu horizontal.html"><i class="fa-solid fa-bars"></i><br>Menu Horizontal</a></li>
-                    <li><a href="#"><i class="fa-brands fa-slack"></i><br>Sub Items</a>
-                        <ul>
-                            <li><a href="menu-subitems.html"><i class="fa-solid fa-ellipsis"></i><br>Sub Items 1</a></li>
-                            <li><a href="menu-subitems2.html"><i class="fa-solid fa-ellipsis-vertical"></i><br>Sub Items 2</a></li>
-                        </ul>
-                </ul>
-            </li>
-        </ul>
-    </nav>
+    <!-- Secciòn INICIO -->
+    <span class="sombra">
+        <section id="inicio" class="inicio">
+            <div class="contenido">
+                <header>
+                    <div class="logo">
+                        <i class="fa-brands fa-wolf-pack-battalion"></i>
+                        <h1>Esteban</h1>
+                    </div>
+                    <nav id="nav" class=""">
+                        <a href="#inicio">Inicio</a>
+                        <a href="#servicios">Servicios</a>
+                        <a href="#trabajos">Trabajos</a>
+                        <a href="#contacto">Contacto</a>
+                    </nav>
+    
+                    <!-- Icono del menu responsive -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+    
+                    <div class="redes">
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                </header>
+    
+                <div class="fila">
+                    <div class="col">
+                        <h1>Pablo Esteban Herrera Albarracin</h1>
+                        <h2>Aspirante a Ilustrador</h2>
+                        <p>Soy un aprendiz de Diseño, que aspira a ser diseñador profecional, tengo conociemienstos
+                            basicos en after Effects, adobe Ilustrador y premiere pro 
+                        </p>
+                        <button class="btn btn-1">Bibliografia</button>
+                    </div>
+                    <div class="col">
+                        <div class="contenedor-img">
+                            <img src="Img/Pablo.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </span>
 
-    <h1 class="tipografia">Bienvenido a Mi Portafolio</h1>
-    <h2 class="tipografia">Esteban Albarracin</h2>
+    <!-- sección SERVICIOS -->
+    <section id="servicios" class="servicios">
+        <div class="fila">
+            <div class="col">
+                <div class="card">
+                    <div class="icono color1">
+                        <div class="circulo">
+                            <i class="fa-brands fa-unity"></i>
+                        </div>
+                    </div>
+                    <h3>Diseño 3D</h3>
+                    <p>Conociemienstos basicos y medios en el modelado 3D en pogramas de modelado Autodesk Maya y Blender</p>
+
+                    <a href="#">Leer Más</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="icono color2">
+                        <div class="circulo">
+                            <i class="fa-solid fa-palette"></i>
+                        </div>
+                    </div>
+                    <h3>Diseño Gráfico</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta inventore neque ducimus cupiditate, placeat incidunt culpa quis quod distinctio.</p>
+
+                    <a href="#">Leer Más</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="icono color3">
+                        <div class="circulo">
+                            <i class="fa-solid fa-video"></i>
+                        </div>
+                    </div>
+                    <h3>Animaciones</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta inventore neque ducimus cupiditate, placeat incidunt culpa quis quod distinctio.</p>
+
+                    <a href="#">Leer Más</a>
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="col">
+                <div class="card">
+                    <div class="icono color1">
+                        <div class="circulo">
+                            <i class="fa-solid fa-photo-film"></i>
+                        </div>
+                    </div>
+                    <h3>Galeria</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta inventore neque ducimus cupiditate, placeat incidunt culpa quis quod distinctio.</p>
+
+                    <a href="#">Leer Más</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="icono color2">
+                        <div class="circulo">
+                            <i class="fa-solid fa-camera-retro"></i>
+                        </div>
+                    </div>
+                    <h3>Fotografia</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta inventore neque ducimus cupiditate, placeat incidunt culpa quis quod distinctio.</p>
+
+                    <a href="#">Leer Más</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="icono color3">
+                        <div class="circulo">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                    </div>
+                    <h3>Programación</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta inventore neque ducimus cupiditate, placeat incidunt culpa quis quod distinctio.</p>
+
+                    <a href="#">Leer Más</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- sección trabajos -->
+    <section class="trabajos" id="trabajos">
+        <h2>Mis Trabajos</h2>
+
+        <nav>
+            <a href="javascript:void(0)" class="borde" id="item" onclick="verCategoria('item')">Todos</a>
+            <a href="javascript:void(0)" class="" id="disenio" onclick="verCategoria('disenio')">Diseño</a>
+            <a href="javascript:void(0)" class="" id="programacion" onclick="verCategoria('programacion')">Programación</a>
+            <a href="javascript:void(0)" class="" id="animaciones" onclick="verCategoria('animaciones')">Animaciones</a>
+        </nav>
+
+        <div class="galeria">
+            <div class="item disenio">
+                <img src="Img/casco jory.png" alt="">
+                <div class="info">
+                    <h3>Titulo del Trabajo</h3>
+                    <span>html</span><span>css</span><span>javascript</span>
+                    <a href="#">Ver Trabajo</a>
+                </div>
+            </div>
+            <div class="item programacion">
+                <img src="Img/Maquetacion.PNG" alt="">
+                <div class="info">
+                    <h3>Maquetacion</h3>
+                    <span>html</span><span>css</span><span>javascript</span>
+                    <a href="maquetacion.html">Ver Trabajo</a>
+                </div>
+            </div>
+            <div class="item programacion">
+                <img src="Img/calendario.PNG" alt="">
+                <div class="info">
+                    <h3>Calendario</h3>
+                    <span>html</span><span>css</span><span>javascript</span>
+                    <a href="calendario.html">Ver Trabajo</a>
+                </div>
+            </div>
+            <div class="item animaciones">
+                <img src="Img/Fuente 3.PNG" alt="">
+                <div class="info">
+                    <h3>Titulo del Trabajo</h3>
+                    <span>html</span><span>css</span><span>javascript</span>
+                    <a href="Fuente 3.html">Ver Trabajo</a>
+                </div>
+            </div>
+            <div class="item disenio">
+                <img src="img/colores.PNG" alt="">
+                <div class="info">
+                    <h3>Titulo del Trabajo</h3>
+                    <span>html</span><span>css</span><span>javascript</span>
+                    <a href="Colores.html">Ver Trabajo</a>
+                </div>
+            </div>
+            <div class="item animaciones">
+                <img src="img/Catalogo.PNG" alt="">
+                <div class="info">
+                    <h3>Titulo del Trabajo</h3>
+                    <span>html</span><span>css</span><span>javascript</span>
+                    <a href="Catalogo.html">Ver Trabajo</a>
+                </div>
+            </div>
+            <div class="item programacion">
+                <img src="img/menu horizontal.PNG" alt="">
+                <div class="info">
+                    <h3>Titulo del Trabajo</h3>
+                    <span>html</span><span>css</span><span>javascript</span>
+                    <a href="Menu horizontal.html">Ver Trabajo</a>
+                </div>
+            </div>
+            <div class="item disenio">
+                <img src="img/flexbox.PNG" alt="">
+                <div class="info">
+                    <h3>Titulo del Trabajo</h3>
+                    <span>html</span><span>css</span><span>javascript</span>
+                    <a href="flexbox.html">Ver Trabajo</a>
+                </div>
+            </div>
+            <div class="item programacion">
+                <img src="img/margenes.PNG" alt="">
+                <div class="info">
+                    <h3>Titulo del Trabajo</h3>
+                    <span>html</span><span>css</span><span>javascript</span>
+                    <a href="Margenes.html">Ver Trabajo</a>
+                </div>
+            </div>
+            <div class="item programacion">
+                <img src="img/flexbox.PNG" alt="">
+                <div class="info">
+                    <h3>Titulo del Trabajo</h3>
+                    <span>html</span><span>css</span><span>javascript</span>
+                    <a href="#">Ver Trabajo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- sección contacto -->
+    <section class="contacto" id="contacto">
+        <div class="contenedor-contacto">
+            <h1>Contacto</h1>
+            <div class="fila">
+                <div class="col">
+                    <div class="info">
+                        <h3>Email:</h3>
+                        <p>ph6227800@gmail.com</p>
+                    </div>
+                    <div class="info">
+                        <h3>Teléfono:</h3>
+                        <p>3123578193</p>
+                    </div>
+                    <div class="info">
+                        <h3>País</h3>
+                        <p>Culimbia</p>
+                    </div>
+                    <div class="info">
+                        <h3>Ciudad:</h3>
+                        <p>Pitalito</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <input type="text" placeholder="Nombre...">
+                    <input type="text" placeholder="Correo...">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <input type="submit" value="Enviar" class="btn">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Esteban - 2023 - </p>
+    </footer>
+    <script src="Js/miportafolio.js"></script>
 </body>
-
 </html>
