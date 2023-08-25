@@ -15,10 +15,10 @@ body{
 
 /* SECCION I N I C I O */
 .inicio{
-    background:linear-gradient(to right, #212223f6, #6b6c6c);
-    clip-path: polygon(0 0, 100% 0, 100% 50%, 47% 84%, 0 45%);
-    height: 95vh;
-    padding:  0 25px;
+    background:linear-gradient(to right, #000c67, #007be5);
+    clip-path: polygon(0 0, 100% 0, 100% 46%, 47% 84%, 0 45%);
+    height: 90vh;
+    padding:  0 20px;
 }
 .inicio .contenido{
     max-width: 1100px;
@@ -50,16 +50,16 @@ body{
     border: 2px solid transparent;
 }
 #inicio header nav a:hover{
-    border-bottom: 2px solid #ec1111;
+    border-bottom: 2px solid #ff5b00;
 }
 .inicio .redes a{
     text-decoration: none;
-    color: #ff0101;
+    color: #fff;
     display: inline-block;
     margin: 0 10px;
 }
 .inicio .redes a:hover{
-    color: #00c8ff;
+    color: #ff5b00;
 }
 .inicio .fila{
     display: flex;
@@ -69,9 +69,9 @@ body{
 .inicio .fila .col{
     width: 50%;
 }
-.inicio .fila .col h1{
+.inicio .fila .col h2{
     margin-bottom: 15px;
-    font-size: 35px;
+    font-size: 40px;
 }
 .inicio .fila .col p{
     margin-bottom: 20px;
