@@ -15,7 +15,7 @@ body{
 
 /* SECCION I N I C I O */
 .inicio{
-    background:linear-gradient(to right, #000c67, #007be5);
+    background:linear-gradient(to right, #1b1b1b, #424242);
     clip-path: polygon(0 0, 100% 0, 100% 46%, 47% 84%, 0 45%);
     height: 90vh;
     padding:  0 20px;
@@ -50,7 +50,7 @@ body{
     border: 2px solid transparent;
 }
 #inicio header nav a:hover{
-    border-bottom: 2px solid #ff5b00;
+    border-bottom: 2px solid #ffffff;
 }
 .inicio .redes a{
     text-decoration: none;
@@ -59,7 +59,7 @@ body{
     margin: 0 10px;
 }
 .inicio .redes a:hover{
-    color: #ff5b00;
+    color: #2c2c2c;
 }
 .inicio .fila{
     display: flex;
@@ -71,14 +71,14 @@ body{
 }
 .inicio .fila .col h2{
     margin-bottom: 15px;
-    font-size: 40px;
+    font-size: 30px;
 }
 .inicio .fila .col p{
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .inicio .fila .col .contenedor-img{
-    max-width: 400px;
+    max-width: 250px;
     margin: auto;
 }
 .inicio .fila .col .contenedor-img img{
@@ -185,12 +185,10 @@ body{
     left: 50%;
     transform: translateX(-50%);
 }
+
 /* SECCION T R A B A J O S */
-h2{
-    color: white;
-}
 .trabajos{
-    background:linear-gradient(to right, #444444, #0e0e0e);
+    background:linear-gradient(to right, #444444, #7a7979);
     max-width: 2000px;
     max-height: 2000px;
     margin: auto;
@@ -207,17 +205,17 @@ h2{
     text-decoration: none;
     display: inline-block;
     margin: 0 20px;
-    color: #ffffff;
+    color: #007be5;
     font-weight: bold;
     padding: 3px 10px;
     border: 3px solid transparent;
 }
 .trabajos nav a:hover{
-    border: 3px solid #ffffff;
+    border: 3px solid #ff5b00;
 }
 /* Esta clase se agregrá dinámicamente cuando haya seleccionada una opción */
 .borde{
-    border: 3px solid #90f0ff !important;  
+    border: 3px solid #ff5b00 !important;  
 }
 .trabajos .galeria .item img{
     width: 100%;
@@ -248,7 +246,7 @@ h2{
     transition: .3s;
 }
 .trabajos .galeria .item .info h3{
-    color: #ffffff;
+    color: #000;
     margin-bottom: 20px;
 }
 .trabajos .galeria .item .info span{
@@ -272,10 +270,10 @@ h2{
 /* SECCIÓN C O N T A C T O */
 .contacto{
     background:
-        linear-gradient(rgba(255, 255, 255, 0), rgba(0, 12, 103, 0)),
+        linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0.8)),
         url(img/foto-contacto.png);
         background-size: cover;
-        color: #0d0d0d;
+        color: #000000;
         margin-top: 100px;
         padding: 80px 20px;
 }
@@ -283,10 +281,9 @@ h2{
     max-width: 1100px;
     margin: auto;
 }
-.contacto h1{
+.contacto h2{
     text-align: center;
     padding-bottom: 30px;
-    color: #000;
 }
 .contacto .contenedor-contacto .fila{
     display: flex;
@@ -310,20 +307,20 @@ h2{
     border: 1px solid #8d8d8d ;
     margin-bottom: 20px;
     outline: none;
-    color: #ffffff;
+    color: #000000;
 }
 .contacto .btn{
     background-color: none;
     padding: 5px 40px;
     border: 2px solid;
-    color: #fff;
+    color: #000000;
     cursor: pointer;
-    background: linear-gradient(to right, #0f0f0f, #686867);
+    background: linear-gradient(to right, #fd4800, #fc843f);
 }
 
 footer{
-    background-color: #000;
-    color: #fff;
+    background-color: #000000;
+    color: #ffffff;
     padding: 7px 0;
     font-size: 14px;
     text-align: center;
@@ -335,7 +332,7 @@ footer{
         clip-path: none;
     }
 }
-@media screen and (max-width:800px){
+@media screen and (max-width:700px){
     .redes{
         display: none;
     }
