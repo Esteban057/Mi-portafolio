@@ -114,12 +114,6 @@ body{
     filter:drop-shadow(0em 30px 20px #9bd2f4);
 }
 /* SECCION S E R V I C I O S */
-/* .conocimientos {
-    font-size: 35px;
-    margin-top: 200px;
-    text-align: center;
-    color: #000;
-} */
 .servicios{
     max-width: 1100px;
     margin: auto;
@@ -167,7 +161,7 @@ body{
     font-size: 20px;
 }
 .color1{
-    background: linear-gradient(#3c3a3d, #818080);
+    background: linear-gradient(#ff9900, #ff5b00);
 }
 .color2{
     background: linear-gradient(#038aee, #0039a9);
