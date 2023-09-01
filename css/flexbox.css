@@ -1,0 +1,128 @@
+*{
+    font-family: sans-serif;
+}
+.box-cont{
+    background-color: rgb(71, 3, 120);
+    gap: 20px;
+}
+.box-1 {
+    display: flex;
+    flex-direction: column;
+}
+.box-gen {
+    background-color: rgb(40, 38, 38);
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    font-size: 1.8em;
+}
+
+.box-main-wrap {
+    height: 280px;
+    gap: 20px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 70%;
+    margin: 0 auto;
+}
+.box-height {
+    height: 500px;
+    gap: 40px;
+    background-color: rgb(71, 3, 120)
+}
+
+.box-2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.box-3 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box-4 {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.box-5{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.box-6 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-7 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.box-8{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box-9 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.box-10 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.box-11 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    .box-1-1{
+        background-color: rgb(22, 172, 172);
+        width: 100px;  
+        height: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: whitesmoke;
+        font-size: 1.8em;
+    }
+    .box-1-2 {
+        background-color: rgb(209, 209, 37);
+        width: 100px;  
+        height: 450px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: whitesmoke;
+        font-size: 1.8em;
+    }
+    .box-1-3 {
+        background-color: darkorange;
+        width: 100px;  
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: whitesmoke;
+        font-size: 1.8em;
+    }
+    .box-1-4 {
+        background-color: brown;
+        width: 100px;  
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: whitesmoke;
+        font-size: 1.8em;
+    }
+}

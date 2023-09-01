@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    background-color: rgb(242, 242, 242)
+}
+
+.main-box {
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.box-style {
+    width: 450px;
+    height: 560x;
+    margin: 0 auto;
+    margin-top: 100px;
+    background-color: rgb(255, 255, 255);
+    flex-direction: row;
+}
+
+.product-box {
+    width: 250px;
+    height: 300px;
+    background-color:  rgb(255, 255, 255);
+    margin: 0 auto;
+}
+
+img {
+    margin-top: 20px;
+}
+
+.add-cart-1 {
+    margin-top: 100px;
+    text-align: center;
+    padding-top: 30px;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(224, 233, 192);
+}
+
+.add-cart-1-span {
+    background-color: transparent;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.9em;
+}
+
+.add-cart-2 {
+    margin-top: 100px;
+    text-align: center;
+    padding-top: 30px;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(224, 233, 192);
+}
+
+.add-cart-2-span {
+    background-color: transparent;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.9em;
+}
+
+.product-tex {
+    text-align: center;
+    background-color: white;
+}
+
+.product-tex-span {
+    background-color: white;
+    font-size: 1.9em;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgba(64, 64, 64, 0.9);
+}
+
+.tex-description {
+    background-color: white;
+    color: rgba(64, 64, 64, 0.9);
+    font-size: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+
+}
+
+.price-text {
+    background-color: white;
+    color: rgba(64, 64, 64, 0.9);
+    font-size: 2.3em;
+    font-weight: 900;
+    display: block;
+    margin-top: 20px;
+}
+
+.jedi-style {
+    color: rgb(73, 37, 206);
+    font-size: 1.5em;
+}
+
+.galactic-style {
+    color: rgb(73, 37, 206);
+    font-size: 2.8em;
+}
+.fa-solid {
+    background-color: transparent;
+}
+.fa-brands {
+    background-color: transparent;
+}
+
+body {
+    background: url('../Img/marek-piwnicki-zIACshDV-YE-unsplash.jpg') no-repeat;
+    background-size: cover;
+}
