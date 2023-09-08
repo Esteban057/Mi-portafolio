@@ -11,6 +11,7 @@ header {
     grid-template: "logo-menu box-input           icon-notifications" 70px /
                      310px    minmax(400px, 1fr)  250px;
 }
+
 .logo-menu {
     grid-area: logo-menu;
     color: red;
@@ -18,12 +19,20 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-left: 20px;
-    gap: 35px;
+    margin-left: 15px;
+    gap: 40px;
     
 }
+
+.fa-brands:hover {
+    cursor: pointer;
+    background-color: rgb(96,96,96,.5);
+    border-radius: 8px;
+    border-top: 5px;
+}
+
 .fa-brands{
-    font-size: 3em;
+    font-size: 1.5em;
 }
 
 .box-input {
@@ -47,11 +56,6 @@ header {
     box-shadow: 0 0 5px #007bff;
 }
 
-
-
-
-
-
 .icon-notifications {
     font-size: 1.5em;
     grid-area: icon-notifications;
@@ -64,23 +68,23 @@ header {
     list-style: none;
 }
 
-.icon-notifications:hover {
-    border-bottom: 2px rgb(230, 7, 7);
-    cursor: pointer;
-}
 
 .main-menu {
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
-    height: 60px;
     color: black;
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 30px;
     list-style: none;
+    text-decoration: none;
 }
+.main-content {
+    display: flex;
+    
+}
+
+
+
 
 
 
