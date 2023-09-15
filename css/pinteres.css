@@ -78,11 +78,39 @@ header {
     list-style: none;
     text-decoration: none;
 }
-.main-content {
-    display: flex;
-    
+
+.gallery{
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 25px;
+    columns: 7  200px;
+    column-gap: 1em;
+    background-color: chartreuse;
 }
 
+.box-content {
+    background-color: rgb(237, 234, 234);
+    border-radius: 10px;
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.tex{
+    text-align: center;
+}
+
+img {
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+.hov {
+    background-color: rgba(224, 24, 24, 0.147);
+    border-radius: 10px;
+    position: absolute;
+    width: 236px;
+    height: 443px;
+}
 
 
 
