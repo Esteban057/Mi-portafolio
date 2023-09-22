@@ -37,7 +37,7 @@ header {
 
 .box-input {
     grid-area: box-input;
-    background-color: purple;
+    background-color: rgb(237, 235, 235);
     padding-left: 24px;
     padding-top: 10px;
     min-height: 30px;
@@ -85,7 +85,7 @@ header {
     margin-top: 25px;
     columns: 7  200px;
     column-gap: 1em;
-    background-color: chartreuse;
+    background-color: rgb(255, 255, 255);
 }
 
 .box-content {
