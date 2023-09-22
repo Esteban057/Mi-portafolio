@@ -79,12 +79,15 @@ header {
     text-decoration: none;
 }
 
+/* IMAGENES */
+
 .gallery{
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
     margin-top: 25px;
-    columns: 7  200px;
-    column-gap: 1em;
+    columns: 7  252px;
+    column-gap: 0.5em;
+ 
     background-color: rgb(255, 255, 255);
 }
 
@@ -93,6 +96,7 @@ header {
     border-radius: 10px;
     margin-bottom: 8px;
     position: relative;
+    max-width: 100%;
 }
 
 .tex{
@@ -101,11 +105,11 @@ header {
 
 img {
     border-radius: 10px;
-    max-width: 100%;
+    width: 100%;
 }
 
 .hov {
-    background-color: rgba(224, 24, 24, 0.147);
+    background-color: rgb(255, 0, 0);
     border-radius: 10px;
     position: absolute;
     width: 236px;
