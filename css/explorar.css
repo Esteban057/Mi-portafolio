@@ -136,11 +136,9 @@ img {
     cursor: pointer;
 }
 .box-tex {
-    /* background-color: blue; */
     position: absolute;
     width: 404px;
     height: 99px;
-    /* margin: 80px; */
     text-align: center;
 
 }
