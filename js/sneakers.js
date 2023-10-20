@@ -1,6 +1,6 @@
 let mainImg = document.getElementById("mainImg");
 let boxImgFixed = document.getElementById("boxImgFixed");
-let bottonCerrar = document.getElementById("bottonCerrar")
+let botonCerrar = document.getElementById("botonCerrar")
 let iconLeft = document.getElementById("iconLeft");
 let iconRight = document.getElementById("iconRight")
 let mainImgFixed1 = document.getElementById("mainImgFixed1");
@@ -63,7 +63,7 @@ iconLeft.addEventListener("click", function(){
     }
 });
 
-bottonCerrar.addEventListener("click", function(){
+botonCerrar.addEventListener("click", function(){
     boxImgFixed.classList.add("box-img-fixed-hidden");
     boxImgFixed.classList.remove("box-img-fixed")
 })
