@@ -11,6 +11,12 @@ let thumb1 = document.getElementById("thumb1");
 let thumb2 = document.getElementById("thumb2");
 let thumb3 = document.getElementById("thumb3");
 let thumb4 = document.getElementById("thumb4");
+let boxMinus = document.getElementById("boxMinus");
+let boxCant = document.getElementById("boxCant");
+let boxPlus = document.getElementById("boxPlus");
+let precioUnitario = document.getElementById("precioUnitario")
+let valorUnitario = 100000;
+let valorTotal = document.getElementById("valorTotal");
 
 mainImg.addEventListener("click",function(){
     boxImgFixed.classList.remove("box-img-fixed-hidden");
@@ -96,5 +102,33 @@ thumb4.addEventListener("click", function(){
     mainImgFixed2.classList.add("img-hidden");
     mainImgFixed3.classList.add("img-hidden");
     mainImgFixed4.classList.remove("img-hidden");
+});
+
+/* mostrar Valor unitario */
+let valorUnitarioAux = Intl.NumberFormat("DE-de").format(valorUnitario);
+document.getElementById("precioUnitario").innerHTML = "$" + valorUnitarioAux;
+
+boxPlus.addEventListener("click",  function (){
+    let cantidad = boxCant.innerHTML; 
+    if (cantidad < 10) {
+        cantidad++;
+        document.getElementById("boxCant").innerHTML = cantidad;
+        let valorTotalInt = cantidad * valorUnitario;
+        let valorTotalAux = Intl.NumberFormat("DE-de").format(valorTotalInt); 
+        document.getElementById("valorTotal").innerHTML = cantidad * valorUnitario;
+    }
+    
+});
+
+boxMinus.addEventListener("click",  function (){
+    let cantidad = boxCant.innerHTML; 
+    if (cantidad > 0) {
+        cantidad--;
+        document.getElementById("boxCant").innerHTML = cantidad;
+        let valorTotalInt = cantidad * valorUnitario;
+        let valorUnitarioAux = Int.NumberFormat("DE-de").format(valorTotalInt); 
+        document.getElementById("valorTotal").innerHTML = cantidad * valorUnitario;
+    }
+    
 });
 

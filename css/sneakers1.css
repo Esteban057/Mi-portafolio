@@ -185,6 +185,7 @@ header {
     opacity: 0.7;
 }
 .box-thumb {
+    
     margin: 15px;
 }
 .box-thumb:hover{
@@ -213,7 +214,70 @@ header {
     line-height: 1.6em;
     font-weight: 500;
 }
+.box-precio {
+   display: flex;
+   flex-direction: row;
 
+}
+.precio{
+    margin-top: 25px;
+    font-weight: 700;
+    font-size: 2.1em;
+
+}
+.descuento {
+    display: flex;
+    align-items: flex-end;
+    font-weight: 600;
+}
+.lbl-descuento {
+    background-color: rgb(239, 218, 181);
+    padding: 5px;
+    border-radius: 4px;
+    margin-left: 5px;
+    margin-bottom: 8px;
+    color: rgb(225,115,26);
+}
+.box-precio-sin-desc {
+    color: rgb(140,140,140, .8);
+    font-weight: 700;
+    margin-top: 10px;
+    font-size: 1.1em;
+    text-decoration: line-through;
+}
+.box-minus-plus {
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    background-color: rgb(247,248,253);
+    border-radius: 10px;
+}
+.box-minus, .box-cant, .box-plus {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    font-weight: 700;
+} 
+
+.box-minus, .box-plus {
+    color: rgb(225,115,26);
+}
+
+.box-minus:hover, .box-plus:hover {
+    cursor: pointer;
+    background-color: rgb(204, 205, 208);
+    border-radius: 10px;
+}
+
+.valor-total {
+    margin-top: 25px;
+    font-weight: 700;
+    font-size: 3em;
+}
 
 /* Fonts */
 /* kanit-regular - latin */
