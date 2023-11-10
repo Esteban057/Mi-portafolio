@@ -125,9 +125,9 @@ boxMinus.addEventListener("click",  function (){
     if (cantidad > 0) {
         cantidad--;
         document.getElementById("boxCant").innerHTML = cantidad;
-        let valorTotalInt = cantidad * valorUnitario;
-        let valorUnitarioAux = Int.NumberFormat("DE-de").format(valorTotalInt); 
-        document.getElementById("valorTotal").innerHTML = cantidad * valorUnitario;
+        let valorTotalInt = cantidad - valorUnitario;
+        let valorTotalAux = Int.NumberFormat("DE-de").format(valorTotalInt); 
+        document.getElementById("valorTotal").innerHTML = cantidad - valorUnitario;
     }
     
 });
